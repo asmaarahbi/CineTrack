@@ -7,11 +7,11 @@
     <script src="https://cdn.tailwindcss.com"></script>
 
 </head>
-<body class="bg-black text-white mt-2">
-    <header class="flex items-center gap-4 border-b border-neutral-900 bg-black px-6 py-4">
+<body class="bg-black text-white">
+    <header class="flex flex-wrap items-center gap-4 border-b border-neutral-900 bg-black px-6 py-4">
         <a href=# class="shrink-0"> <img src="assets/images/Logo CineTrack.png" alt="logo" class="h-10 w-auto"></a>
         <div class="flex flex-1 items-center gap-3 rounded-full border border-gray-700 bg-neutral-900 px-5 py-3">
-        <input type="text" placeholder="search for movies or  series..." class="w-full bg-transparent text-gray-300 outline-none placeholder-gray-500">
+        <input id="recherche" type="text" placeholder="search for movies or  series..." class="w-full bg-transparent text-gray-300 outline-none placeholder-gray-500">
         </div>
 <!--filtre-->
     <div class="flex items-center gap-2">
@@ -26,11 +26,18 @@
         <section>
        <div class="h-46 w-full">
         <img src="/assets/images/breaking_bad_banner.png" alt="photo" class="h-full w-full  object-cover ">
-
        </div>
         </section>
+       <p id="message" class="mt-6 hidden text-center text-red-500"></p>
+        <div id= "grid" class=" grid grid-cols-2 gap-4 p-6 md:grid-cols-3 lg:grid-cols-4"></div>
     </main>
+    <div id ="modal" class="fixed inset-0 hidden items-center justify-center bg-black/80 p-4">
+    <div class="relative w-full max-w-md rounded-xl bg-neutral-900 p-6">
+     <button id="fermer" class="absolute right-4 top-3 text-2xl hover:text-red-600">X</button>
+   
+   <div id="modal-contenu"></div>
+   </div>
+   </div>
     <script type="module" src="js/main.js"></script>
-    <script type="module" src="js/api.js"></script>
 </body>
 </html>
