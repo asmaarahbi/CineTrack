@@ -29,15 +29,27 @@
        </div>
         </section>
        <p id="message" class="mt-6 hidden text-center text-red-500"></p>
+           <p id="message" class="mt-6 hidden text-center text-red-500"></p>
       <div class="flex flex-col gap-6 p-6 lg:flex-row">
-        <div id="grid" class="grid flex-1 grid-cols-2 gap-4 p-6 md:grid-cols-3 "></div>
-         <aside class="w-full lg:sticky lg:top-4 lg:w-72 lg:self-start">
-            <div class="rounded-xl border border-neutral-800 bg-neutral-900 p-4 ">
-                <h2 class="text-lg font-bold"> Mes Favoris</h2>
+
+        <div class="flex-1">
+            <div id="grid" class="grid grid-cols-2 gap-4 md:grid-cols-3"></div>
+
+            <div class="mt-8 flex items-center justify-center gap-4">
+                <button id="precedent" class="rounded-full border border-red-800 px-5 py-2 hover:bg-red-700 disabled:opacity-40">Précédent</button>
+                <span id="info-page" class="text-sm text-gray-400">Page 1 / 1</span>
+                <button id="suivant" class="rounded-full border border-red-800 px-5 py-2 hover:bg-red-700 disabled:opacity-40">Suivant</button>
+            </div>
+        </div>
+
+        <aside class="w-full lg:sticky lg:top-4 lg:w-72 lg:self-start">
+            <div class="rounded-xl border border-neutral-800 bg-neutral-900 p-4">
+                <h2 class="text-lg font-bold">Mes Favoris</h2>
                 <p id="compteur" class="mt-1 text-sm text-gray-400">0 film . 0 serie</p>
                 <ul id="liste-favoris" class="mt-4 flex flex-col gap-3"></ul>
             </div>
-         </aside>
+        </aside>
+
       </div>
 
     </main>
