@@ -11,6 +11,8 @@ return `<div class ="card  rounded-xl border border-neutral-700 bg-neutral-900 p
 </button>
 </div>
 
+
+
 <h3 class="mt-2 font-bold">${film.title} </h3>
 <p class="text-sm text-gray-400">${film.releaseYear} . ${film.type}</p>
 <button class = "btn-voir mt-3 w-full rounded border border-red-800 py-2 hover:bg-red-700">Voir plus</button> 
